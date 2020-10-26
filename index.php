@@ -18,12 +18,12 @@ include("login.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Sign up</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="assert/fonts/material-icon/css/material-design-iconic-font.min.css">
-    <!-- Main css -->
     <link rel="stylesheet" href="assert/css/style.css">
+    <!-- Main css -->
     <script src="assert/vendor/jquery/jquery.min.js"></script>
     <script src="assert/js/main.js"></script>
 </head>

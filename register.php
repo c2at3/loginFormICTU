@@ -26,12 +26,12 @@ function register($conn){
                 $date_expires = date('Y-m-d H:i:s', strtotime($date_created.' + 45 days'));
                 #echo $sql;
                 $query->execute();
-                echo '<p style="color:green;">*Tài khoản '.$username.' đã được kích hoạt</p>';
+                echo '<p style="color:green;">* '.$username.' account has been activated</p>';
             } else {
-                echo '<p style="color:red;">*Tài khoản '.$username.' đã tồn tại trên hệ thống !</p>';
+                echo '<p style="color:red;">* '.$username.' account already exists on the system</p>';
             }
         } else {
-            echo '<p style="color:red;">*Có lỗi xảy ra, vui lòng thử lại sau !</p>';
+            echo '<p style="color:red;">*An error occurred, please try again later !</p>';
         }
     
     }

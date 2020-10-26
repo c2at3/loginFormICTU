@@ -9,7 +9,7 @@ include("login.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Sign in</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="assert/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -44,7 +44,7 @@ include("login.php");
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
-                                <p><a href="./forgot.php" style="text-decoration:none">* Forgot password?</a></p>
+                                <p><a href="./forgotPass.php" style="text-decoration:none">* Forgot password?</a></p>
                             </div>
                             <div class="form-group form-button">
                                 <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
