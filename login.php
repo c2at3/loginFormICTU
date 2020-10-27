@@ -1,6 +1,7 @@
 <?php
 include("connect_database.php");
 session_start();
+
 header('Content-Type: text/html; charset=UTF-8');
     function login($conn){
         if (isset($_POST["username"]) && isset($_POST["password"])){

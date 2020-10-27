@@ -8,7 +8,6 @@ function getFile(){
     $count = count($arrURI) -1;
     $file = "$arrURI[$count]";
     $file = substr($file,0, 44);
-    echo "$file";
     return $file;
 }
 
@@ -40,6 +39,7 @@ function resetPass($conn){
                         #echo $sql;
                         $query->execute();
                         echo '<p style="color:green;">* Password change is completed.</p>';
+                        system("python mail_changePass.py ".$email." ".$username."");
                         system("del ".getFile()."");
                     } else {
                         echo '<p style="color:red;">* An error occurred, please try again later !</p>';

@@ -29,7 +29,19 @@ function changePass($conn){
                     $date_expires = date('Y-m-d H:i:s', strtotime($date_created.' + 45 days'));
                     #echo $sql;
                     $query->execute();
-                    echo '<p style="color:green;">* Password change is completed.</p>';
+                    system("python mail_changePass.py ".$email." ".$username."");
+                    $path = session_save_path();
+                    echo $path;
+                    if (isset($_SESSION['username'])){
+                        unset($_SESSION['username']); // xóa session login
+                        $files = glob($path.'\*'); // get all file names
+                        foreach($files as $file){ // iterate files
+                            if(is_file($file))
+                            #echo $file;
+                            system("del ".$file.""); // delete file
+                        }
+                    }
+                    echo '<p style="color:green;">* Password change is completed.</p><script>window.location.replace("http://localhost/ATW_login/loginForm.php");</script>';
                     
                 }
             } else {

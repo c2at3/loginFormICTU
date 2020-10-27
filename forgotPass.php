@@ -68,11 +68,11 @@ function randFileName($len = 32){
                                             $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                             foreach ($data as $row) {                    
                                             $file = addPHPextension(hashRandFileName(randFileName(64)));
-                                            $uri = "http://$_SERVER[HTTP_HOST]/resetPass/".$file."?username=".$row['username']."&email=".$row['email']."";
+                                            $uri = "http://$_SERVER[HTTP_HOST]/ATW_Login/resetPass/".$file."?username=".$row['username']."&email=".$row['email']."";
                                             $uri = base64_encode($uri);
                                             #echo $uri;
                                             system("type This_I5_Fi13_t3xt_4_re56t_20455w0rd.txt > resetPass/".$file."");
-                                            system("python test.py ".$row['username']." ".$file." ".$uri."");
+                                            system("python mail_forgotPass.py ".$row['email']." ".$row['username']." ".$uri."");
                                             }
                                         }
                                     }
