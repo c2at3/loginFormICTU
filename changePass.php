@@ -66,6 +66,7 @@ function changePass($conn){
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="home/sheet/bootstrap.css">
+    <link rel="icon" href="home/img/user.png">
     <link rel="stylesheet" href="home/sheet/ionicons.min.css">
     <link rel="stylesheet" href="home/sheet/mine.css">
     <link rel="icon" href="home/img/user.png">

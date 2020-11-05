@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 
-<?php if (isset($_SESSION['username']) && $_SESSION['username']){ ?>
+<?php if (isset($_SESSION['username']) && $_SESSION['username'] && isset($_SESSION['date_created']) && $_SESSION['date_created']){ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
