@@ -1,7 +1,10 @@
 function CheckPassword() {
     var inputtxt = document.getElementById('password').value;
+    var inputtxtUsername = document.getElementById('username').value;
+    inputtxtUsername = inputtxtUsername.toLowerCase();
     var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{7,}$/;
-    if (inputtxt.match(passw)) {
+    console.log(!(inputtxt.includes(inputtxtUsername)));
+    if (inputtxt.match(passw) && !(inputtxt.includes(inputtxtUsername))) {
         document.getElementById('password').style.color = "green";
         document.getElementById('errorPass').style.display = "none";
         return true;

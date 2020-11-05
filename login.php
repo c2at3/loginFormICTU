@@ -41,9 +41,6 @@ header('Content-Type: text/html; charset=UTF-8');
                     $_SESSION['email'] = $data->email;
                     $_SESSION['date_created'] = $data->date_created;
                     $_SESSION['date_expires'] = $date_expires;
-                    
-                    // $secs = strtotime($_SESSION['date_expires']) - strtotime(date('Y-m-d'));// == <seconds between the two times>
-                    // $days = (int)($secs / 86400);
                     $_SESSION['passTime'] = $days;
                     $actual_link = "http://$_SERVER[HTTP_HOST]/ATW_Login";
                     header('Location: '.$actual_link.'/home.php');
