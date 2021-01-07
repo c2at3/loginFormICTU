@@ -1,2 +1,2 @@
 # loginFormICTU
-Bài tập thôi :(( Làm cho xong chớ hổng thích PHP cho lắm :((
+Đây là bài tập trên lớp, làm cái lúc đang chán nên chả trình bày gì -.- làm đúng yêu cầu đề bài thôi :((
